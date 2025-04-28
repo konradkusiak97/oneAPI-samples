@@ -9,13 +9,13 @@ project(SYCL-Graph-Samples)
 set(CMAKE_CXX_STANDARD 17)
 
 # Configure SYCL
-include(cmake/ConfigureSYCL.cmake)
+include("${CMAKE_SOURCE_DIR}/../common/cmake/ConfigureSYCL.cmake")
 
 # Output directory for executables
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR} CACHE PATH "" FORCE)
 
-# Find all .cpp files in the Samples/ directory
-file(GLOB SAMPLE_SOURCES "${CMAKE_SOURCE_DIR}/Samples/*.cpp")
+# Find all .cpp files in the src/ directory
+file(GLOB SAMPLE_SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 
 # Add executable for each .cpp file
 foreach(SOURCE_FILE ${SAMPLE_SOURCES})

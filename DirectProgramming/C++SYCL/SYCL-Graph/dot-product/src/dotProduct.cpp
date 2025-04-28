@@ -3,7 +3,7 @@
  * For a copy, see http://www.apache.org/licenses/LICENSE-2.0
  */
 
-#include "common/aspect_queries.hpp"
+#include "../../common/aspect_queries.hpp"
 
 #include <sycl/sycl.hpp>
 
